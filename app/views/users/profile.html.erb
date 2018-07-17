@@ -1,0 +1,75 @@
+
+<!--언어별 랭킹, 언어별 바이트 합-->
+
+<h1>난 여깄다.</h1>
+
+
+<script>
+    // $(document).ready(function(){
+    //     function github_rank(arr){
+    //       const github_language=arr.reduce(function(a,x){
+    //         for(let language in x){        
+    //             if(!a.has(language)){
+    //                   a.set(language,x[language])
+    //             }else{
+    //                   let result = a.get(language)+x[language];
+    //                   a.set(language,result)
+    //             };
+    //         }
+    //          return a
+    //         },new Map);
+    
+    //         let result=ranking(github_language);
+    //         console.log(result);
+    //     }
+        
+    //     function ranking(map){
+    //             let result =[];
+    //             map[Symbol.iterator] = function* () {
+    //               yield* [...this.entries()].sort((a, b) => b[1] - a[1] );
+    //             }
+    //             for (let [key, value] of map) {     // get data sorted
+    //                 result.push(key);
+    //             }
+    //             return result;
+    //     }
+
+        
+        
+    //     (function(){
+    //     var languages=[];
+    //     console.time('a')
+    //     $.ajax({
+    //         url:'https://api.github.com/users/Teatreeessential/repos',
+    //         type:'GET',
+    //         header:{Authorization:'13b16d30619fb86137aa257ae49834faa9db75e7'},
+    //         success:function(data){
+    //           for(let obj of data){
+    //               $.ajax({
+    //                   url:`${obj.languages_url}`,
+    //                   type:'GET',
+                       
+    //                   header:{Authorization:'13b16d30619fb86137aa257ae49834faa9db75e7'},
+    //                   success:function(data){
+    //                       languages.push(data);
+    //                   }
+    //               })
+    //           }
+               
+               
+    //         }
+            
+    //     });
+    //     console.timeEnd('a')
+    //         setTimeout(github_rank,2*1000,languages);
+    //     })();
+        
+        
+        
+        
+        
+         
+    // })
+</script>
+
+
