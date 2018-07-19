@@ -84,11 +84,11 @@ class UsersController < ApplicationController
   
   def repos
     response=RestClient.get('https://api.github.com/users/Teatreeessential/repos',
-                             headers={Authorization:'13b16d30619fb86137aa257ae49834faa9db75e7'});
+                             headers={Authorization:''});
     
     JSON.parse(response).each do |response| 
        languages = RestClient.get(response['languages_url'],
-                              headers={Authorization:'13b16d30619fb86137aa257ae49834faa9db75e7'});
+                              headers={Authorization:''});
        puts languages
     end
   end
